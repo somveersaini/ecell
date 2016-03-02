@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Student Registration</title>
+<meta http-equiv="Content name=""-Type" content="text/html; charset=utf-8" />
+<link href="./studentreg.css" rel="stylesheet" name="" type="text/css" />
+<link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' name="" type='text/css'>
+</head>
+<body id="body-color">
+
+<h1>Student Registration</h1>
+    <div class="container" id="main">
+    
+    <form class="form-horizontal" role="form" method="POST" action="studentreg.php">
+<div class="panel panel-primary">
+      <div class="panel-heading">Enter Student Details</div>
+      <div class="panel-body">
+    <div class="col-md-6 form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Full Name</label>
+                    <div class="col-sm-9"> 
+                        <input name="firstName" type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
+                    </div>
+    </div>
+    <div class="col-md-6 form-group">
+                    <label  for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9"> 
+                        <input name="" type="email" id="email" placeholder="Email" class="form-control">
+                    </div>
+    </div>
+
+            <div class="col-md-6 form-group hidden">
+                <label  class="col-sm-3 control-label" for="student_id">ID: </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="studentid" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="program_id">Program  </label>
+                <div class="col-sm-9">
+                <input name="program_id" type="text" class="form-control" id="program_id" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="year">Year </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="year" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="campus">Campus </label>
+                <div class="col-sm-9">
+                <input name="campus_id" type="text" class="form-control" id="campus_id" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fnenglish">Full Name (English)</label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fnenglish" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fnhindi">Full Name (Hindi)</label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fnhindi" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="enrollment">Enrolment No. </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="enrollment" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="studentdob">DOB (DD/MM/YYYY): </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="studentdob" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="birthplace">Place of Birth</label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="birthplace" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="category">Category </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="category" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="subcategory">Sub Category </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="subcategory" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="religion">Religion </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="religion" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gender">Gender </label>
+                <div class="col-sm-9">
+                <input name="" type="radio" name="gender" value="male" checked> Male
+        <input name="" type="radio" name="gender" value="female"> Female
+        <input name="" type="radio" name="gender" value="other"> Other 
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="martialstatus">Martial Status </label>
+                <div class="col-sm-9">
+                <input name="" type="radio" name="martialstatus" value="married" > Married
+        <input name="" type="radio" name="martialstaus" value="unmarried" checked> Unmarried
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="area">Area</label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="area" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="bloodgroup">Blood Group </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="bloodgroup" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="nationality">Nationality </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="nationality" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="city">City </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="city" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="state">State </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="state" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pincode">Pin Code </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="pincode" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="cphone">Phone No. (communication)</label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="cphone" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="cemail">Email </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="cemail" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fname">Father Name </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fname" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fprofession">Father Profession </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fprofession" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="foffice">Father Office Address </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="foffice" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fcity">City </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="fcity" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fstate">State </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fstate" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fpincode">Pin Code </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fpincode" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fphone">Phone No. (communication)</label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="fphone" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="femail">Email </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="femail" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fname">Mother Name </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fname" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fprofession">Mother Profession </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fprofession" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="paddress">Permanent Address </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="paddress" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pcity">City </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="pcity" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pstate">State </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="pstate" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="ppincode">Pin Code </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="ppincode" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pphone">Phone No. </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="pphone" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pemail">Email </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="pemail" size="40">
+            </div>
+            </div><br>
+             <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gname">Local Guardian Name </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="gname" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gaddress">Guardian Address </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="gaddress" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gcity">City </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="gcity" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Phone No. </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+
+<--      -->
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="acatagory">Admission Category</label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="acatagory" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fstate">Admit Card </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fstate" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fpincode">Pin Code </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fpincode" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fphone">Phone No. (communication)</label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="fphone" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="femail">Email </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="femail" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fname">Mother Name </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fname" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fprofession">Mother Profession </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="fprofession" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="paddress">Permanent Address </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="paddress" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pcity">City </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="pcity" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pstate">State </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="pstate" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="ppincode">Pin Code </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="ppincode" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pphone">Phone No. </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="pphone" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="pemail">Email </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="pemail" size="40">
+            </div>
+            </div><br>
+             <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gname">Local Guardian Name </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="gname" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gaddress">Guardian Address </label>
+                <div class="col-sm-9">
+                <input name="" type="text" class="form-control" id="gaddress" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gcity">City </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="gcity" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Phone No. </label>
+                <div class="col-sm-9">
+                <input name="" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+
+
+            <input id="button" class="btn btn-primary btn-block" style="margin-bottom:5%" name="" type="submit" name="submit" value="Submit">
+    </div>
+    </div>
+        </form>
+    </div>
+</body>
+</html>
