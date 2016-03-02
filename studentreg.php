@@ -57,7 +57,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	   $father_first_name = $_POST["father_first_name"];
 	   $father_last_name = $_POST["father_last_name"];
 	   $father_profession = $_POST["father_profession"];
-
 	   $father_office_addr = $_POST["father_office_addr"];
 	   $city2 = $_POST["city2"];
 	   $state_id2 = $_POST["state_id2"];
@@ -95,13 +94,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	   $degree_grad = $_POST["degree_grad"];
 	   $percentage_grad = $_POST["percentage_grad"];
 	   $university_grad_id = $_POST["university_grad_id"];
+	   $marksheet_pg = $_POST["marksheet_pg"];
+	   $degree_pg = $_POST["degree_pg"];
+	   $percentage_pg = $_POST["percentage_pg"];
+	   $university_pg_id = $_POST["university_pg_id"];
+	   $gate_score_card = $_POST["gate_score_card"];
+	   $gate_year = $_POST["gate_year"];
+	   $gate_score = $_POST["gate_score"];
+	   $cat_score_card = $_POST["cat_score_card"];
+	   $cat_year = $_POST["cat_year"];
+	   $cat_score = $_POST["cat_score"];
+	   $tc = $_POST["tc"];
+	   $character_cert = $_POST["character_cert"];
+	   $caste_cert = $_POST["caste_cert"];
+	   $ph_cert = $_POST["ph_cert"];
+	   $passport = $_POST["passport"];
+	   $passport_no = $_POST["passport_no"];
+	   $validity_period = $_POST["validity_period"];
+	   $mcaip = $_POST["mcaip"];
+	   $DASA = $_POST["DASA"];
+	   $remark = $_POST["remark"];
+	   $anti_rag_st = $_POST["anti_rag_st"];
+	   $anti_rag_pr = $_POST["anti_rag_pr"];
+	   $med_cert = $_POST["med_cert"];
+	   $muslim_minority = $_POST["muslim_minority"];
+	   $other_minority = $_POST["other_minority"];
+	   $admission_letter = $_POST["admission_letter"];
+
 
 
 	   try {
 	    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 	    // set the PDO error mode to exception
 	    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	    $sql = "INSERT INTO student (student_id, program_id, registration_timestamp, campus_id, student_type_id, branch_change, first_name, middle_name, last_name, hindi_name, enrollment_no, dob, birth_place, category_id, sub_category, religion_id, gender, marital_status, area, blood_group, nationality, communication_addr, city1, state_id1, pincode1, phone_no1, email1, father_first_name, father_last_name, father_profession, father_office_addr, city2, state_id2, pincode2, phone_no2, email2, mother_first_name, mother_last_name, mother_profession, permanent_addr, city3, state_id3, pincode3, phone_no3, email3, local_guardian_name, loca_guardian_addr, city4, phone_no4, admission_category_id, admit_card, jee_rank_card, jee_roll_no, jee_rank_pos, jee_seat_allot_letter, marsheek_10, cert_10, percentage_10, board_id_10, marksheet_12, cert_12, percentage_12, borad_id_12, marksheet_grad, degree_grad, percentage_grad, university_grad_id, marksheet_pg, degree_pg, percentage_pg, university_pg_id, gate_score_card, gate_year, gate_score, cat_score_card, cat_year, cat_score, tc, character_cert, caste_cert, ph_cert, passport, passport_no, validity_period, mcaip, DASA, remark, anti_rag_st, anti_rag_pr, med_cert, muslim_minority, other_minority, admission_letter) VALUES (NULL, '$program_id', CURRENT_TIMESTAMP, '', '', '', '$first_name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '')";
+		    $sql = "INSERT INTO student (student_id, program_id, registration_timestamp, campus_id, student_type_id, branch_change, first_name, middle_name, last_name, hindi_name, enrollment_no, dob, birth_place, category_id, sub_category, religion_id, gender, marital_status, area, blood_group, nationality, communication_addr, city1, state_id1, pincode1, phone_no1, email1, father_first_name, father_last_name, father_profession, father_office_addr, city2, state_id2, pincode2, phone_no2, email2, mother_first_name, mother_last_name, mother_profession, permanent_addr, city3, state_id3, pincode3, phone_no3, email3, local_guardian_name, loca_guardian_addr, city4, phone_no4, admission_category_id, admit_card, jee_rank_card, jee_roll_no, jee_rank_pos, jee_seat_allot_letter, marsheek_10, cert_10, percentage_10, board_id_10, marksheet_12, cert_12, percentage_12, borad_id_12, marksheet_grad, degree_grad, percentage_grad, university_grad_id, marksheet_pg, degree_pg, percentage_pg, university_pg_id, gate_score_card, gate_year, gate_score, cat_score_card, cat_year, cat_score, tc, character_cert, caste_cert, ph_cert, passport, passport_no, validity_period, mcaip, DASA, remark, anti_rag_st, anti_rag_pr, med_cert, muslim_minority, other_minority, admission_letter) VALUES (NULL, '$program_id', CURRENT_TIMESTAMP', '$campus_id', '$student_type_id', '$branch_change', '$first_name', '$middle_name,', '$last_name', '$hindi_name', '$enrollment_no', '$dob', '$birth_place', '$category_id', '$sub_category', '$religion_id', '$gender', '$marital_status', '$area', '$blood_group', '$nationality', '$communication_addr', '$city1', '$state_id1', '$pincode1', '$phone_no1', '$email1', '$father_first_name', '$father_last_name', '$father_profession', '$father_office_addr', '$city2', '$state_id2', '$pincode2', '$phone_no2', '$email2', '$mother_first_name', '$mother_last_name', '$mother_profession', '$permanent_addr', '$city3', '$state_id3', '$pincode3', '$phone_no3', '$email3', '$local_guardian_name', '$loca_guardian_addr', '$city4', '$phone_no4', '$admission_category_id', '$admit_card', '$jee_rank_card', '$jee_roll_no,', '$jee_rank_pos', '$jee_seat_allot_letter', '$marsheek_10', '$cert_10', '$percentage_10', '$board_id_10', '$marksheet_12', '$cert_12', '$percentage_12', '$borad_id_12', '$marksheet_grad', '$degree_grad', '$percentage_grad', '$university_grad_id', '$marksheet_pg', '$degree_pg', '$percentage_pg', '$university_pg_id', '$gate_score_card', '$gate_year', '$gate_score', '$cat_score_card', '$cat_year', '$cat_score', '$tc', '$character_cert', '$caste_cert', '$ph_cert', '$passport', '$passport_no', '$validity_period', '$mcaip', '$DASA', '$remark', '$anti_rag_st', '$anti_rag_pr', '$med_cert', '$muslim_minority', '$other_minority', '$admission_letter')";
 	    // use exec() because no results are returned
 	    $conn->exec($sql);
 	    echo "New record created successfully";

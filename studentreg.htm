@@ -11,8 +11,8 @@
 <body id="body-color">
 
 <h1>Student Registration</h1>
-    <div class="container" id="main">
-    
+      <div class="container" id="main">
+
     <form class="form-horizontal" role="form" method="POST" action="studentreg.php">
 <div class="panel panel-primary">
       <div class="panel-heading">Enter Student Details</div>
@@ -63,49 +63,49 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fnhindi">Full Name (Hindi)</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="fnhindi" size="40">
+                <input name="hindi_name" type="text" class="form-control" id="fnhindi" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="enrollment">Enrolment No. </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="enrollment" size="40">
+                <input name="enrollment_no" type="text" class="form-control" id="enrollment" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="studentdob">DOB (DD/MM/YYYY): </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="studentdob" size="40">
+                <input name="dob" type="text" class="form-control" id="studentdob" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="birthplace">Place of Birth</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="birthplace" size="40">
+                <input name="birth_place" type="text" class="form-control" id="birthplace" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="category">Category </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="category" size="40">
+                <input name="category_id" type="text" class="form-control" id="category" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="subcategory">Sub Category </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="subcategory" size="40">
+                <input name="sub_category" type="textarea" class="form-control" id="subcategory" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="religion">Religion </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="religion" size="40">
+                <input name="religion_id" type="textarea" class="form-control" id="religion" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gender">Gender </label>
                 <div class="col-sm-9">
-                <input name="" type="radio" name="gender" value="male" checked> Male
+                <input name="gender" type="radio" name="gender" value="male" checked> Male
         <input name="" type="radio" name="gender" value="female"> Female
         <input name="" type="radio" name="gender" value="other"> Other 
             </div>
@@ -120,25 +120,25 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="area">Area</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="area" size="40">
-            </div>
+                <input name="area" type="text" class="form-control" id="area" size="40">
+                </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="bloodgroup">Blood Group </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="bloodgroup" size="40">
+                <input name="blood_group" type="text" class="form-control" id="bloodgroup" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="nationality">Nationality </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="nationality" size="40">
+                <input name="nationality" type="textarea" class="form-control" id="nationality" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="city">City </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="city" size="40">
+                <input name="city1" type="textarea" class="form-control" id="city" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -285,14 +285,13 @@
                 <input name="" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
-
-<--      -->
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="acatagory">Admission Category</label>
                 <div class="col-sm-9">
                 <input name="" type="textarea" class="form-control" id="acatagory" size="40">
             </div>
             </div><br>
+            //todo here
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fstate">Admit Card </label>
                 <div class="col-sm-9">
