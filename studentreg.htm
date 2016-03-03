@@ -17,624 +17,662 @@
 <div class="panel panel-primary">
       <div class="panel-heading">Enter Student Details</div>
       <div class="panel-body">
-    <div class="col-md-6 form-group">
-                    <label for="firstName" class="col-sm-3 control-label">Full Name</label>
-                    <div class="col-sm-9"> 
-                        <input name="firstName" type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
-                    </div>
-    </div>
-    <div class="col-md-6 form-group">
-                    <label  for="email" class="col-sm-3 control-label">Email</label>
-                    <div class="col-sm-9"> 
-                        <input name="" type="email" id="email" placeholder="Email" class="form-control">
-                    </div>
-    </div>
-
-            <div class="col-md-6 form-group hidden">
-                <label  class="col-sm-3 control-label" for="student_id">ID: </label>
-                <div class="col-sm-9">
-                <input name="student_type_id" type="text" class="form-control" id="studentid" size="40">
-            </div>
-            </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="program_id">Program  </label>
                 <div class="col-sm-9">
-                <input name="program_id" type="text" class="form-control" id="program_id" size="40">
+                <input name="program_id" type="text" class="form-control" id="program_id" placeholder="Program Name" size="40" autofocus>
             </div>
-            </div><br>
+            </div>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="year">Year </label>
+                <div class="col-sm-9">
+                <input name="year" type="text" class="form-control" id="year" placeholder="Program Year" size="40">
+            </div>
+            </div>
+           
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="year">Branch Change </label>
                 <div class="col-sm-9">
                 <input name="branch_change" type="text" class="form-control" id="year" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="campus">Campus ID</label>
                 <div class="col-sm-9">
                 <input name="campus_id" type="text" class="form-control" id="campus_id" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fnenglish">First Name</label>
-                <div class="col-sm-9">
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="fnenglish">First Name</label>
+                <div class="col-sm-6">
                 <input name="first_name" type="text" class="form-control" id="fnenglish" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fnenglish">Middle Name</label>
-                <div class="col-sm-9">
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="fnenglish">Middle Name</label>
+                <div class="col-sm-6">
                 <input name="middle_name" type="text" class="form-control" id="fnenglish" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fnenglish">Last Name</label>
-                <div class="col-sm-9">
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="fnenglish">Last Name</label>
+                <div class="col-sm-6">
                 <input name="last_name" type="text" class="form-control" id="fnenglish" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fnhindi">Full Name (Hindi)</label>
                 <div class="col-sm-9">
                 <input name="hindi_name" type="text" class="form-control" id="fnhindi" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="enrollment">Enrolment No. </label>
                 <div class="col-sm-9">
                 <input name="enrollment_no" type="text" class="form-control" id="enrollment" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="studentdob">DOB (DD/MM/YYYY): </label>
-                <div class="col-sm-9">
-                <input name="dob" type="text" class="form-control" id="studentdob" size="40">
             </div>
-            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="studentdob">Date of Birth: </label>
+                <div class="col-sm-9">
+                </div>
+                                <div class="col-md-8 col-xs-9">
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select name="dob" id="dob" class="dropselectsec1">
+                                                <option value="">Date</option>
+                                                <option value="2">1</option>
+                                                <option value="1">2</option>
+                                                <option value="4">3</option>
+                                                <option value="5">4</option>
+                                                <option value="6">5</option>
+                                                <option value="3">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select name="dob" id="dob" class="dropselectsec1">
+                                                <option value="">Month</option>
+                                                <option value="2">Jan</option>
+                                                <option value="1">Feb</option>
+                                                <option value="4">Mar</option>
+                                                <option value="5">Apr</option>
+                                                <option value="6">May</option>
+                                                <option value="3">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">Aug</option>
+                                                <option value="9">Sept</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select name="dob" id="dob" class="dropselectsec1">
+                                                <option value="">Year</option>
+                                                <option value="2">1990</option>
+                                                <option value="1">1991</option>
+                                                <option value="4">1992</option>
+                                                <option value="5">1993</option>
+                                                <option value="6">1994</option>
+                                                <option value="3">1995</option>
+                                                <option value="7">1996</option>
+                                                <option value="8">1997</option>
+                                                <option value="9">1998</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="birthplace">Place of Birth</label>
                 <div class="col-sm-9">
                 <input name="birth_place" type="text" class="form-control" id="birthplace" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="category">Category </label>
                 <div class="col-sm-9">
                 <input name="category_id" type="text" class="form-control" id="category" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="subcategory">Sub Category </label>
                 <div class="col-sm-9">
                 <input name="sub_category" type="textarea" class="form-control" id="subcategory" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="religion">Religion </label>
                 <div class="col-sm-9">
                 <input name="religion_id" type="textarea" class="form-control" id="religion" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gender">Gender </label>
-                <div class="col-sm-9">
-                <input name="gender" type="radio" name="gender" value="" checked> Male
-        <input name="" type="radio" name="gender" value="female"> Female
-        <input name="" type="radio" name="gender" value="other"> Other 
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="">Marital Status </label>
-                <div class="col-sm-9">
-                <input name="marital_status" type="radio" name="maritalstatus" value="married" > Married
-        <input name="marital_status" type="radio" name="maritalstaus" value="unmarried" checked> Unmarried
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gender">Gender </label>
+                <div class="col-sm-6">
+                <select name="gender" id="gender" class="dropselectsec1">
+                                                <option value="">SELECT</option>
+                                                <option value="male">MALE</option>
+                                                <option value="female">FEMALE</option>
+                 </select>
             </div>
-            </div><br>
+            </div>
+            <div class="col-md-4 form-group"> 
+                <label  class="col-sm-6 control-label" >Marital Status </label>
+                <div class="col-md-6 col-xs-9">
+                      <input type="radio" name="marital_status"  value="0"> Single
+                      <input type="radio" name="marital_status"  value="1" checked> Married
+                </div>   
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="bloodgroup">Blood Group </label>
+                <div class="col-sm-6">
+                <input name="blood_group" type="text" class="form-control" id="bloodgroup" size="40">
+            </div>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="area">Area</label>
                 <div class="col-sm-9">
                 <input name="area" type="text" class="form-control" id="area" size="40">
                 </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="bloodgroup">Blood Group </label>
-                <div class="col-sm-9">
-                <input name="blood_group" type="text" class="form-control" id="bloodgroup" size="40">
             </div>
-            </div><br>
+            
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="nationality">Nationality </label>
                 <div class="col-sm-9">
                 <input name="nationality" type="textarea" class="form-control" id="nationality" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="city">City </label>
                 <div class="col-sm-9">
                 <input name="city1" type="textarea" class="form-control" id="city" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="state">State </label>
                 <div class="col-sm-9">
                 <input name="state_id1" type="text" class="form-control" id="state" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="pincode">Pin Code </label>
                 <div class="col-sm-9">
                 <input name="pincode1" type="text" class="form-control" id="pincode" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="cphone">Phone No. (communication)</label>
                 <div class="col-sm-9">
                 <input name="phone_no1" type="textarea" class="form-control" id="cphone" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="cphone">Address (communication)</label>
                 <div class="col-sm-9">
                 <input name="communication_addr" type="textarea" class="form-control" id="cphone" size="40">
             </div>
-            </div><br>
+            </div>
 
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="cemail">Email </label>
                 <div class="col-sm-9">
                 <input name="email1" type="textarea" class="form-control" id="cemail" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fname">Father First Name </label>
                 <div class="col-sm-9">
                 <input name="father_first_name" type="text" class="form-control" id="fname" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fname">Father Last Name </label>
                 <div class="col-sm-9">
                 <input name="father_last_name" type="text" class="form-control" id="fname" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fprofession">Father Profession </label>
                 <div class="col-sm-9">
                 <input name="father_profession" type="text" class="form-control" id="fprofession" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="foffice">Father Office Address </label>
                 <div class="col-sm-9">
                 <input name="father_office_addr" type="text" class="form-control" id="foffice" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fcity">City </label>
                 <div class="col-sm-9">
                 <input name="city2" type="textarea" class="form-control" id="fcity" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fstate">State </label>
                 <div class="col-sm-9">
                 <input name="state_id2" type="text" class="form-control" id="fstate" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fpincode">Pin Code </label>
                 <div class="col-sm-9">
                 <input name="pincode2" type="text" class="form-control" id="fpincode" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fphone">Phone No. (Father)</label>
                 <div class="col-sm-9">
                 <input name="phone_no2" type="textarea" class="form-control" id="fphone" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="femail">Email </label>
                 <div class="col-sm-9">
                 <input name="email2" type="textarea" class="form-control" id="femail" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="mname">Mother First Name </label>
                 <div class="col-sm-9">
                 <input name="mother_first_name" type="text" class="form-control" id="mname" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="mname">Mother Last Name </label>
                 <div class="col-sm-9">
                 <input name="mother_last_name" type="text" class="form-control" id="mname" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="mprofession">Mother Profession </label>
                 <div class="col-sm-9">
                 <input name="mother_profession" type="text" class="form-control" id="mprofession" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="paddress">Permanent Address </label>
                 <div class="col-sm-9">
                 <input name="permanent_addr" type="text" class="form-control" id="paddress" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="pcity">City </label>
                 <div class="col-sm-9">
                 <input name="city3" type="textarea" class="form-control" id="pcity" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="pstate">State </label>
                 <div class="col-sm-9">
                 <input name="state_id3" type="text" class="form-control" id="pstate" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="ppincode">Pin Code </label>
                 <div class="col-sm-9">
                 <input name="pincode3" type="text" class="form-control" id="ppincode" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="pphone">Phone No. </label>
                 <div class="col-sm-9">
                 <input name="phone_no3" type="textarea" class="form-control" id="pphone" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="pemail">Email </label>
                 <div class="col-sm-9">
                 <input name="email3" type="textarea" class="form-control" id="pemail" size="40">
             </div>
-            </div><br>
+            </div>
              <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gname">Local Guardian Name </label>
                 <div class="col-sm-9">
                 <input name="local_guardian_name" type="text" class="form-control" id="gname" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gaddress">Guardian Address </label>
                 <div class="col-sm-9">
                 <input name="loca_guardian_addr" type="text" class="form-control" id="gaddress" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gcity">City </label>
                 <div class="col-sm-9">
                 <input name="city4" type="textarea" class="form-control" id="gcity" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">Phone No. </label>
                 <div class="col-sm-9">
                 <input name="phone_no4" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="acatagory">Admission Category</label>
-                <div class="col-sm-9">
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="acatagory">Admission Category</label>
+                <div class="col-sm-6">
                 <input name="admission_category_id" type="textarea" class="form-control" id="acatagory" size="40">
             </div>
-            </div><br> 
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fstate">Admit Card </label>
-                <div class="col-sm-9">
-                <input name="admit_card" type="text" class="form-control" id="fstate" size="40">
+            </div> 
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="fstate">Admit Card </label>
+                <div class="col-sm-6">
+                      <input type="radio" name="admit_card"  value="1"> Yes
+                      <input type="radio" name="admit_card"  value="0" checked> No
+                </div>
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fpincode">JEE Rank Card </label>
-                <div class="col-sm-9">
-                <input name="jee_rank_card" type="text" class="form-control" id="fpincode" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="fpincode">JEE Rank Card </label>
+                <div class="col-sm-6">
+                    <input type="radio" name="jee_rank_card"  value="1"> Yes
+                    <input type="radio" name="jee_rank_card"  value="0" checked> No 
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fphone">JEE Roll NO. (communication)</label>
-                <div class="col-sm-9">
-                <input name="jee_roll_no" type="textarea" class="form-control" id="fphone" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="femail">JEE Rank </label>
-                <div class="col-sm-9">
-                <input name="jee_rank_pos" type="textarea" class="form-control" id="femail" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="fphone">JEE Roll NO.</label>
+                <div class="col-sm-6">
+                <input name="jee_roll_no" type="textarea" class="form-control"  size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fname">JEE Seat Allotment Letter</label>
-                <div class="col-sm-9">
-                <input name="jee_seat_allot_letter" type="text" class="form-control" id="fname" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fprofession">Markshet 10th </label>
-                <div class="col-sm-9">
-                <input name="marsheek_10" type="text" class="form-control" id="fprofession" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" >JEE Rank </label>
+                <div class="col-sm-6">
+                <input name="jee_rank_pos" type="textarea" class="form-control"  size="40">
             </div>
-                </div><br>
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" >JEE Seat Allotment Letter</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="jee_seat_allot_letter"  value="1"> Yes
+                    <input type="radio" name="jee_seat_allot_letter"  value="0" checked> No 
+            </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" >Markshet 10th </label>
+                <div class="col-sm-6">
+                    <input type="radio" name="marsheek_10"  value="1"> Yes
+                    <input type="radio" name="marsheek_10"  value="0" checked> No
+            </div>
+                </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Certificate 10th</label>
-                <div class="col-sm-9">
-                <input name="cert_10" type="textarea" class="form-control" id="gphone" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" >Certificate 10th</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="cert_10"  value="1"> Yes
+                    <input type="radio" name="cert_10"  value="0" checked> No
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Percentage 10th</label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Percentage 10th</label>
+                <div class="col-sm-6">
                 <input name="percentage_10" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">10th Board Id</label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">10th Board Id</label>
+                <div class="col-sm-6">
                 <input name="board_id_10" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">12th Marksheet</label>
-                <div class="col-sm-9">
-                <input name="marksheet_12" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">12th Certificate</label>
-                <div class="col-sm-9">
-                <input name="cert_12" type="textarea" class="form-control" id="gphone" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">12th Marksheet</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="marksheet_12"  value="1"> Yes
+                    <input type="radio" name="marksheet_12"  value="0" checked> No
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">12th Percentage </label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">12th Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="cert_12"  value="1"> Yes
+                    <input type="radio" name="cert_12"  value="0" checked> No
+            </div>
+            </div>
+            
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">12th Percentage </label>
+                <div class="col-sm-6">
                 <input name="percentage_12" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Board id 12th</label>
+            <div class="col-md-12 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Board 12th</label>
                 <div class="col-sm-9">
                 <input name="borad_id_12" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Graduation Marksheet</label>
-                <div class="col-sm-9">
-                <input name="marksheet_grad" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Graduation degree</label>
-                <div class="col-sm-9">
-                <input name="degree_grad" type="textarea" class="form-control" id="gphone" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Graduation Marksheet</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="marksheet_grad"  value="1"> Yes
+                    <input type="radio" name="marksheet_grad"  value="0" checked> No
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Grad Percentage</label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Graduation Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="degree_grad"  value="1"> Yes
+                    <input type="radio" name="degree_grad"  value="0" checked> No
+            </div>
+            </div>
+            
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Grad Percentage</label>
+                <div class="col-sm-6">
                 <input name="percentage_grad" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">University grad id </label>
+            <div class="col-md-12 form-group">
+                <label  class="col-sm-3 control-label" >Graduation University </label>
                 <div class="col-sm-9">
                 <input name="university_grad_id" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Marksheet Post Gradution</label>
-                <div class="col-sm-9">
-                <input name="marksheet_pg" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
             
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Degree PostGraduation</label>
-                <div class="col-sm-9">
-                <input name="degree_pg" type="textarea" class="form-control" id="gphone" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" >PG Marksheet</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="marksheet_pg"  value="1"> Yes
+                    <input type="radio" name="marksheet_pg"  value="0" checked> No
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Percentage Post Graduation</label>
-                <div class="col-sm-9">
+            
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" >PG Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="degree_pg"  value="1"> Yes
+                    <input type="radio" name="degree_pg"  value="0" checked> No
+            </div>
+            </div>
+            
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Percentage PG</label>
+                <div class="col-sm-6">
                 <input name="percentage_pg" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">University_Post_Graduate_ID</label>
+            <div class="col-md-12 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">University PG</label>
                 <div class="col-sm-9">
                 <input name="university_pg_id" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Gate Score Card</label>
-                <div class="col-sm-9">
-                <input name="gate_score_card" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Gate Score</label>
-                <div class="col-sm-9">
+            
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Gate Score Card</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="gate_score_card"  value="1"> Yes
+                    <input type="radio" name="gate_score_card"  value="0" checked> No
+            </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Gate Score</label>
+                <div class="col-sm-6">
                 <input name="gate_score" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Gate Year</label>
-                <div class="col-sm-9">
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Gate Year</label>
+                <div class="col-sm-6">
                 <input name="gate_year" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Cat Score Card</label>
-                <div class="col-sm-9">
-                <input name="cat_score_card" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Cat year</label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Cat Score Card</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="cat_score_card"  value="1"> Yes
+                    <input type="radio" name="cat_score_card"  value="0" checked> No
+            </div>
+            </div>
+            
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Cat year</label>
+                <div class="col-sm-6">
                 <input name="cat_year" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Cat score</label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Cat score</label>
+                <div class="col-sm-6">
                 <input name="cat_score" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Transfer Certificate</label>
-                <div class="col-sm-9">
-                <input name="tc" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Character Certificate</label>
-                <div class="col-sm-9">
-                <input name="character_cert" type="textarea" class="form-control" id="gphone" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label">Transfer Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="tc"  value="1"> Yes
+                    <input type="radio" name="tc"  value="0" checked> No
             </div>
-            </div><br>
-            
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Caste Certificate</label>
-                <div class="col-sm-9">
-                <input name="caste_cert" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Physically Handicaaped Certificate</label>
-                <div class="col-sm-9">
-                <input name="ph_cert" type="textarea" class="form-control" id="gphone" size="40">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label">Character Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="character_cert"  value="1"> Yes
+                    <input type="radio" name="character_cert"  value="0" checked> No
             </div>
-            </div><br>
-            
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Passport</label>
-                <div class="col-sm-9">
-                <input name="passport" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label">Caste Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="caste_cert"  value="1"> Yes
+                    <input type="radio" name="caste_cert"  value="0" checked> No
+            </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label">P.H. Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="ph_cert"  value="1"> Yes
+                    <input type="radio" name="ph_cert"  value="0" checked> No
+            </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label">Passport</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="passport"  value="1"> Yes
+                    <input type="radio" name="passport"  value="0" checked> No
+            </div>
+            </div>
             
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">PassportNumber</label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Passport Number</label>
+                <div class="col-sm-6">
                 <input name="passport_no" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
             
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Validity Period</label>
-                <div class="col-sm-9">
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label" for="gphone">Validity Period</label>
+                <div class="col-sm-6">
                 <input name="validity_period" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">DASA</label>
-                <div class="col-sm-9">
-                <input name="DASA" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label">DASA</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="DASA"  value="1"> Yes
+                    <input type="radio" name="DASA"  value="0" checked> No
+            </div>
+            </div>
+            <div class="col-md-4 form-group">
+                <label  class="col-sm-6 control-label">Anti-Rag. Certificate</label>
+                <div class="col-sm-6">
+                    <input type="radio" name="anti_rag_st"  value="1"> Yes
+                    <input type="radio" name="anti_rag_st"  value="0" checked> No
+            </div>
+            </div>
             
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">MCAIP</label>
                 <div class="col-sm-9">
                 <input name="mcaip" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Anti-Ragging-Certificate</label>
-                <div class="col-sm-9">
-                <input name="anti_rag_st" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-            
-            
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Remark</label>
-                <div class="col-sm-9">
-                <input name="remark" type="textarea" class="form-control" id="gphone" size="40">
-            </div>
-            </div><br>
+
             
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">Anti Ragging Pgremark</label>
                 <div class="col-sm-9">
                 <input name="anti_rag_pr" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">Medical Certificate</label>
                 <div class="col-sm-9">
                 <input name="med_cert" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">Muslim Minority</label>
                 <div class="col-sm-9">
                 <input name="muslim_minority" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">Other Minority</label>
                 <div class="col-sm-9">
                 <input name="other_minority" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">Admission Letter</label>
                 <div class="col-sm-9">
                 <input name="admission_letter" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
+            </div>
             
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gphone">Remark</label>
                 <div class="col-sm-9">
                 <input name="remark" type="textarea" class="form-control" id="gphone" size="40">
             </div>
-            </div><br>
-
+            </div>
 
             <input id="button" class="btn btn-primary btn-block" style="margin-bottom:5%" name="" type="submit" name="submit" value="Submit">
-    </div>
+            
     </div>
         </form>
     </div>
