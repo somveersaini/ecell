@@ -13,14 +13,17 @@
 <h1>Student Registration</h1>
       <div class="container" id="main">
 
-    <form class="form-horizontal" role="form" method="POST" action="studentreg.php">
+    <form class="form-horizontal" role="form" method="POST" action="[onshow..script_name]?[onshow.other_prms;noerr]">
 <div class="panel panel-primary">
       <div class="panel-heading">Enter Student Details</div>
       <div class="panel-body">
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="program_id">Program  </label>
                 <div class="col-sm-9">
-                <input name="program_id" type="text" class="form-control" id="program_id" placeholder="Program Name" size="40" autofocus>
+                <select name="program_id">
+                    <option value="[cty_blk.val]">[cty_blk.key;block=option]</option>
+                    <option>[onshow.country;ope=html;select;noerr]</option>
+                </select> 
             </div>
             </div>
             <div class="col-md-6 form-group">
