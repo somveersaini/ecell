@@ -33,7 +33,7 @@
             <div class="col-md-6 form-group hidden">
                 <label  class="col-sm-3 control-label" for="student_id">ID: </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="studentid" size="40">
+                <input name="student_type_id" type="text" class="form-control" id="studentid" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -43,21 +43,33 @@
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="year">Year </label>
+                <label  class="col-sm-3 control-label" for="year">Branch Change </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="year" size="40">
+                <input name="branch_change" type="text" class="form-control" id="year" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="campus">Campus </label>
+                <label  class="col-sm-3 control-label" for="campus">Campus ID</label>
                 <div class="col-sm-9">
                 <input name="campus_id" type="text" class="form-control" id="campus_id" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fnenglish">Full Name (English)</label>
+                <label  class="col-sm-3 control-label" for="fnenglish">First Name</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="fnenglish" size="40">
+                <input name="first_name" type="text" class="form-control" id="fnenglish" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fnenglish">Middle Name</label>
+                <div class="col-sm-9">
+                <input name="middle_name" type="text" class="form-control" id="fnenglish" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fnenglish">Last Name</label>
+                <div class="col-sm-9">
+                <input name="last_name" type="text" class="form-control" id="fnenglish" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -111,10 +123,10 @@
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="martialstatus">Martial Status </label>
+                <label  class="col-sm-3 control-label" for="">Marital Status </label>
                 <div class="col-sm-9">
-                <input name="" type="radio" name="martialstatus" value="married" > Married
-        <input name="" type="radio" name="martialstaus" value="unmarried" checked> Unmarried
+                <input name="marital_status" type="radio" name="maritalstatus" value="married" > Married
+        <input name="marital_status" type="radio" name="maritalstaus" value="unmarried" checked> Unmarried
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -156,9 +168,16 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="cphone">Phone No. (communication)</label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="cphone" size="40">
+                <input name="phone_no1" type="textarea" class="form-control" id="cphone" size="40">
             </div>
             </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="cphone">Address (communication)</label>
+                <div class="col-sm-9">
+                <input name="communication_addr" type="textarea" class="form-control" id="cphone" size="40">
+            </div>
+            </div><br>
+
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="cemail">Email </label>
                 <div class="col-sm-9">
@@ -166,9 +185,15 @@
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fname">Father Name </label>
+                <label  class="col-sm-3 control-label" for="fname">Father First Name </label>
                 <div class="col-sm-9">
                 <input name="father_first_name" type="text" class="form-control" id="fname" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="fname">Father Last Name </label>
+                <div class="col-sm-9">
+                <input name="father_last_name" type="text" class="form-control" id="fname" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -180,7 +205,7 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="foffice">Father Office Address </label>
                 <div class="col-sm-9">
-                <input name="father_office_address" type="text" class="form-control" id="foffice" size="40">
+                <input name="father_office_addr" type="text" class="form-control" id="foffice" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -202,7 +227,7 @@
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fphone">Phone No. (communication)</label>
+                <label  class="col-sm-3 control-label" for="fphone">Phone No. (Father)</label>
                 <div class="col-sm-9">
                 <input name="phone_no2" type="textarea" class="form-control" id="fphone" size="40">
             </div>
@@ -214,15 +239,21 @@
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="mname">Mother Name </label>
+                <label  class="col-sm-3 control-label" for="mname">Mother First Name </label>
                 <div class="col-sm-9">
-                <input name="mothers_first_name" type="text" class="form-control" id="mname" size="40">
+                <input name="mother_first_name" type="text" class="form-control" id="mname" size="40">
+            </div>
+            </div><br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="mname">Mother Last Name </label>
+                <div class="col-sm-9">
+                <input name="mother_last_name" type="text" class="form-control" id="mname" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="mprofession">Mother Profession </label>
                 <div class="col-sm-9">
-                <input name="mother_first_name" type="text" class="form-control" id="mprofession" size="40">
+                <input name="mother_profession" type="text" class="form-control" id="mprofession" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -270,7 +301,7 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gaddress">Guardian Address </label>
                 <div class="col-sm-9">
-                <input name="local_guardian_addr" type="text" class="form-control" id="gaddress" size="40">
+                <input name="loca_guardian_addr" type="text" class="form-control" id="gaddress" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
@@ -324,68 +355,280 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fprofession">Markshet 10th </label>
                 <div class="col-sm-9">
-                <input name="marksheek" type="text" class="form-control" id="fprofession" size="40">
+                <input name="marsheek_10" type="text" class="form-control" id="fprofession" size="40">
             </div>
-            </div><br>
-            // now todo here
+                </div><br>
+            
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="paddress">Permanent Address </label>
+                <label  class="col-sm-3 control-label" for="gphone">Certificate 10th</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="paddress" size="40">
+                <input name="cert_10" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Percentage 10th</label>
+                <div class="col-sm-9">
+                <input name="percentage_10" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">10th Board Id</label>
+                <div class="col-sm-9">
+                <input name="board_id_10" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">12th Marksheet</label>
+                <div class="col-sm-9">
+                <input name="marksheet_12" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">12th Certificate</label>
+                <div class="col-sm-9">
+                <input name="cert_12" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">12th Percentage </label>
+                <div class="col-sm-9">
+                <input name="percentage_12" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Board id 12th</label>
+                <div class="col-sm-9">
+                <input name="borad_id_12" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Graduation Marksheet</label>
+                <div class="col-sm-9">
+                <input name="marksheet_grad" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Graduation degree</label>
+                <div class="col-sm-9">
+                <input name="degree_grad" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Grad Percentage</label>
+                <div class="col-sm-9">
+                <input name="percentage_grad" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">University grad id </label>
+                <div class="col-sm-9">
+                <input name="university_grad_id" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Marksheet Post Gradution</label>
+                <div class="col-sm-9">
+                <input name="marksheet_pg" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Degree PostGraduation</label>
+                <div class="col-sm-9">
+                <input name="degree_pg" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Percentage Post Graduation</label>
+                <div class="col-sm-9">
+                <input name="percentage_pg" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">University_Post_Graduate_ID</label>
+                <div class="col-sm-9">
+                <input name="university_pg_id" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Gate Score Card</label>
+                <div class="col-sm-9">
+                <input name="gate_score_card" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="pcity">City </label>
+                <label  class="col-sm-3 control-label" for="gphone">Gate Score</label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="pcity" size="40">
+                <input name="gate_score" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="pstate">State </label>
+                <label  class="col-sm-3 control-label" for="gphone">Gate Year</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="pstate" size="40">
+                <input name="gate_year" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
+            
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="ppincode">Pin Code </label>
+                <label  class="col-sm-3 control-label" for="gphone">Cat Score Card</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="ppincode" size="40">
+                <input name="cat_score_card" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
+            
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="pphone">Phone No. </label>
+                <label  class="col-sm-3 control-label" for="gphone">Cat year</label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="pphone" size="40">
+                <input name="cat_year" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
+            
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="pemail">Email </label>
+                <label  class="col-sm-3 control-label" for="gphone">Cat score</label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="pemail" size="40">
+                <input name="cat_score" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
-             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gname">Local Guardian Name </label>
-                <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="gname" size="40">
-            </div>
-            </div><br>
+            
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gaddress">Guardian Address </label>
+                <label  class="col-sm-3 control-label" for="gphone">Transfer Certificate</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="gaddress" size="40">
+                <input name="tc" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
+            
+            
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gcity">City </label>
+                <label  class="col-sm-3 control-label" for="gphone">Character Certificate</label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="gcity" size="40">
+                <input name="character_cert" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
+            
+            
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gphone">Phone No. </label>
+                <label  class="col-sm-3 control-label" for="gphone">Caste Certificate</label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="gphone" size="40">
+                <input name="caste_cert" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Physically Handicaaped Certificate</label>
+                <div class="col-sm-9">
+                <input name="ph_cert" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Passport</label>
+                <div class="col-sm-9">
+                <input name="passport" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">PassportNumber</label>
+                <div class="col-sm-9">
+                <input name="passport_no" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Validity Period</label>
+                <div class="col-sm-9">
+                <input name="validity_period" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">DASA</label>
+                <div class="col-sm-9">
+                <input name="DASA" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">MCAIP</label>
+                <div class="col-sm-9">
+                <input name="mcaip" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Anti-Ragging-Certificate</label>
+                <div class="col-sm-9">
+                <input name="anti_rag_st" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Remark</label>
+                <div class="col-sm-9">
+                <input name="remark" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Anti Ragging Pgremark</label>
+                <div class="col-sm-9">
+                <input name="anti_rag_pr" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Medical Certificate</label>
+                <div class="col-sm-9">
+                <input name="med_cert" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Muslim Minority</label>
+                <div class="col-sm-9">
+                <input name="muslim_minority" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Other Minority</label>
+                <div class="col-sm-9">
+                <input name="other_minority" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Admission Letter</label>
+                <div class="col-sm-9">
+                <input name="admission_letter" type="textarea" class="form-control" id="gphone" size="40">
+            </div>
+            </div><br>
+            
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="gphone">Remark</label>
+                <div class="col-sm-9">
+                <input name="remark" type="textarea" class="form-control" id="gphone" size="40">
             </div>
             </div><br>
 

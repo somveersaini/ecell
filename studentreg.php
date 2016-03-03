@@ -8,7 +8,7 @@ $username = "root";
 $password = "";
 $dbname = "offline";
 
-
+print_r(PDO::getAvailableDrivers());
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		if (empty($_POST["student_id"])) {
