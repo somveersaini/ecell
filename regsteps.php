@@ -9,7 +9,7 @@ $TBS->LoadTemplate('regsteps.html');
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "offline";
+$dbname = "online";
  
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	   }
 	    
 	   $program_id = $_POST["program_id"];
-	   $first_name = $_POST["firstName"];
+	   $first_name = $_POST["first_name"];
 	   $campus_id = $_POST["campus_id"];
 	   $student_type_id = $_POST["student_type_id"];
 	   $branch_change = $_POST["branch_change"];
@@ -162,6 +162,8 @@ catch(PDOException $e)
 $TBS->MergeBlock('program',$conn,'SELECT * FROM student_type');
 $TBS->MergeBlock('religion',$conn,'SELECT * FROM religion');
 $TBS->MergeBlock('category',$conn,'SELECT * FROM category');
+$TBS->MergeBlock('campus',$conn,'SELECT * FROM campus');
+$TBS->MergeBlock('state, state2, state3',$conn,'SELECT * FROM state');
 
 $TBS->Show();
 

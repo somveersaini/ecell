@@ -261,7 +261,9 @@ body {
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="state">State </label>
                 <div class="col-sm-9">
-                <input name="state_id1" type="text" class="form-control" id="state" size="40">
+                <select name="state_id1" class="form-control" >
+                    <option value="[state.state_id;block=option]" selected>[state.state_name]</option>
+                </select> 
             </div>
             </div>
             <div class="col-md-6 form-group">
@@ -338,7 +340,9 @@ body {
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fstate">State </label>
                 <div class="col-sm-9">
-                <input name="state_id2" type="text" class="form-control" id="fstate" size="40">
+                <select name="state_id2" class="form-control" >
+                    <option value="[state2.state_id;block=option]" selected>[state2.state_name]</option>
+                </select> 
             </div>
             </div>
             <div class="col-md-6 form-group">
@@ -393,7 +397,9 @@ body {
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="pstate">State </label>
                 <div class="col-sm-9">
-                <input name="state_id3" type="text" class="form-control" id="pstate" size="40">
+                <select name="state_id3" class="form-control" >
+                    <option value="[state3.state_id;block=option]" selected>[state3.state_name]</option>
+                </select> 
             </div>
             </div>
             <div class="col-md-6 form-group">
