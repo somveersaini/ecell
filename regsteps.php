@@ -4,7 +4,7 @@ include_once('tbs/tbs_class.php');
 include_once('tbs/tbs_plugin_html.php');
 
 $TBS = new clsTinyButStrong;
-$TBS->LoadTemplate('studentreg.htm'); 
+$TBS->LoadTemplate('regsteps.html'); 
 
 $servername = "localhost";
 $username = "root";
@@ -17,7 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	     $nameErr = "Name is required";
 	   } else {
 	     $name = test_input($_POST["name"]);
-	     // check if name only contains letters and whitespace
 	     if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
 	       $nameErr = "Only letters and white space allowed";
 	     }
@@ -27,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	     $emailErr = "Email is required";
 	   } else {
 	     $email = test_input($_POST["email"]);
-	     // check if e-mail address is well-formed
 	     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	       $emailErr = "Invalid email format";
 	     }
@@ -134,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		    $sql = "INSERT INTO student (`student_id`, `program_id`, `registration_timestamp`, `campus_id`, `student_type_id`, `branch_change`, `first_name`, `middle_name`, `last_name`, `hindi_name`, `enrollment_no`, `dob`, `birth_place`, `category_id`, `sub_category`, `religion_id`, `gender`, `marital_status`, `area`, `blood_group`, `nationality`, `communication_addr`, `city1`, `state_id1`, `pincode1`, `phone_no1`, `email1`, `father_first_name`, `father_last_name`, `father_profession`, `father_office_addr`, `city2`, `state_id2`, `pincode2`, `phone_no2`, `email2`, `mother_first_name`, `mother_last_name`, `mother_profession`, `permanent_addr`, `city3`, `state_id3`, `pincode3`, `phone_no3`, `email3`, `local_guardian_name`, `loca_guardian_addr`, `city4`, `phone_no4`, `admission_category_id`, `admit_card`, `jee_rank_card`, `jee_roll_no`, `jee_rank_pos`, `jee_seat_allot_letter`, `marsheek_10`, `cert_10`, `percentage_10`, `board_id_10`, `marksheet_12`, `cert_12`, `percentage_12`, `borad_id_12`, `marksheet_grad`, `degree_grad`, `percentage_grad`, `university_grad_id`, `marksheet_pg`, `degree_pg`, `percentage_pg`, `university_pg_id`, `gate_score_card`, `gate_year`, `gate_score`, `cat_score_card`, `cat_year`, `cat_score`, `tc`, `character_cert`, `caste_cert`, `ph_cert`, `passport`, `passport_no`, `validity_period`, `mcaip`, `DASA`, `remark`, `anti_rag_st`, `anti_rag_pr`, `med_cert`, `muslim_minority`, `other_minority`, `admission_letter`) VALUES (NULL, '$program_id', CURRENT_TIMESTAMP, '$campus_id', '$student_type_id', '$branch_change', '$first_name', '$middle_name', '$last_name', '$hindi_name', '$enrollment_no', '$dob', '$birth_place', '$category_id', '$sub_category', '$religion_id', '$gender', '$marital_status', '$area', '$blood_group', '$nationality', '$communication_addr', '$city1', '$state_id1', '$pincode1', '$phone_no1', '$email1', '$father_first_name', '$father_last_name', '$father_profession', '$father_office_addr', '$city2', '$state_id2', '$pincode2', '$phone_no2', '$email2', '$mother_first_name', '$mother_last_name', '$mother_profession', '$permanent_addr', '$city3', '$state_id3', '$pincode3', '$phone_no3', '$email3', '$local_guardian_name', '$loca_guardian_addr', '$city4', '$phone_no4', '$admission_category_id', '$admit_card', '$jee_rank_card', '$jee_roll_no', '$jee_rank_pos', '$jee_seat_allot_letter', '$marsheek_10', '$cert_10', '$percentage_10', '$board_id_10', '$marksheet_12', '$cert_12', '$percentage_12', '$borad_id_12', '$marksheet_grad', '$degree_grad', '$percentage_grad', '$university_grad_id', '$marksheet_pg', '$degree_pg', '$percentage_pg', '$university_pg_id', '$gate_score_card', '$gate_year', '$gate_score', '$cat_score_card', '$cat_year', '$cat_score', '$tc', '$character_cert', '$caste_cert', '$ph_cert', '$passport', '$passport_no', '$validity_period', '$mcaip', '$DASA', '$remark', '$anti_rag_st', '$anti_rag_pr', '$med_cert', '$muslim_minority', '$other_minority', '$admission_letter')";
 	    // use exec() because no results are returned
 	    $conn->exec($sql);
-	    echo "New record created successfully";
+	    echo "New student registered successfully";
 	    }
 	catch(PDOException $e)
 	    {
@@ -151,15 +149,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 //$conn = null;
 
-	try {
-	    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-	    // set the PDO error mode to exception
-	    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-	    }
-	catch(PDOException $e)
-	    {
-	    echo $sql . "<br>" . $e->getMessage();
-	    }
+try {
+	 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+	 // set the PDO error mode to exception
+	 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+	 }
+catch(PDOException $e)
+	 {
+	 echo $sql . "<br>" . $e->getMessage();
+	 }
 
 $TBS->MergeBlock('program',$conn,'SELECT * FROM student_type');
 $TBS->MergeBlock('religion',$conn,'SELECT * FROM religion');

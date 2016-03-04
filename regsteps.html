@@ -2,10 +2,8 @@
 <html lang="en">
     <head>
     <title>Student Registration</title>
-<meta http-equiv="Content name=""-Type" content="text/html; charset=utf-8" />
-<link href="css/studentreg2.css" rel="stylesheet" name="" type="text/css" />
-<link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="./font-awesome.min.css" rel="stylesheet">
+    <meta http-equiv="Content name=""-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' name="" type='text/css'>
     <style type="text/css">
 body {
@@ -59,182 +57,246 @@ body {
     <body>
 
 <div class="container">
-
-      <div class="stepwizard col-md-offset-3">
+    <div class="stepwizard col-md-offset-3">
     <div class="stepwizard-row setup-panel">
           <div class="stepwizard-step">
         <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-        <p>Step 1</p>
+        <p>Personal Details</p>
       </div>
           <div class="stepwizard-step">
         <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-        <p>Step 2</p>
+        <p>Parents Details</p>
       </div>
           <div class="stepwizard-step">
         <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-        <p>Step 3</p>
+        <p>Qualification details</p>
       </div>
-        </div>
-  </div>
-      <form role="form" action="" method="post">
+     </div>
+    </div>
+  <form role="form" action="" method="post">
     <div class="row setup-content" id="step-1">
-          <div class="col-xs-12">
+      <div class="col-xs-12">
         <div class="col-md-12">
-              <div class="panel panel-primary">
-                <div class="panel-heading">Personal Details</div>
-              <div class="panel-body">
-            <div class="col-md-6 form-group">
-                    <label for="firstName" class="col-sm-3 control-label">Full Name</label>
-                    <div class="col-sm-9"> 
-                        <input name="firstName" type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
-                    </div>
-    </div>
-    <div class="col-md-6 form-group">
-                    <label  for="email" class="col-sm-3 control-label">Email</label>
-                    <div class="col-sm-9"> 
-                        <input name="" type="email" id="email" placeholder="Email" class="form-control">
-                    </div>
-    </div>
+            <div class="panel panel-primary">
+            <div class="panel-heading">Personal Details</div>
+            <div class="panel-body">
 
-            <div class="col-md-6 form-group hidden">
-                <label  class="col-sm-3 control-label" for="student_id">ID: </label>
-                <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="studentid" size="40">
-            </div>
-            </div><br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="program_id">Program  </label>
+                <label  class="col-sm-3 control-label" for="program_id">Program </label>
                 <div class="col-sm-9">
-                <input name="program_id" type="text" class="form-control" id="program_id" size="40">
+                    <select name="program_id" class="form-control">
+                        <option value="[program.student_type_id;block=option]" class="form-control" selected>[program.student_type_name]</option>
+                    </select> 
+                </div>
             </div>
-            </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="year">Year </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="year" size="40">
+                <input name="year" type="text" class="form-control" id="year" placeholder="Program Year" size="40">
             </div>
-            </div><br>
+            </div>
+           <br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="campus">Campus </label>
+                <label  class="col-sm-3 control-label" >Branch </label>
+                <div class="col-sm-9">
+                <input name="branch_change" type="text" class="form-control" id="year" size="40">
+            </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="campus">Campus ID</label>
                 <div class="col-sm-9">
                 <input name="campus_id" type="text" class="form-control" id="campus_id" size="40">
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="fnenglish">Full Name (English)</label>
-                <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="fnenglish" size="40">
             </div>
-            </div><br>
+            <br>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" >First Name</label>
+                <div class="col-sm-9">
+                <input name="first_name" type="text" class="form-control"  size="40">
+            </div>
+            </div>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" >Last Name</label>
+                <div class="col-sm-9">
+                <input name="last_name" type="text" class="form-control"  size="40">
+            </div>
+            </div>
+            <br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="fnhindi">Full Name (Hindi)</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="fnhindi" size="40">
+                <input name="hindi_name" type="text" class="form-control" id="fnhindi" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="enrollment">Enrolment No. </label>
+                <label  class="col-sm-3 control-label" for="enrollment">Enrolment Number </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="enrollment" size="40">
+                <input name="enrollment_no" type="text" class="form-control" id="enrollment" size="40">
             </div>
-            </div><br>
+            </div>
+            </br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="studentdob">DOB (DD/MM/YYYY): </label>
+                <label  class="col-sm-3 control-label" for="studentdob">Date of Birth</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="studentdob" size="40">
+                
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <select name="dob" id="dob" class="form-control">
+                                                <option value="">Date</option>
+                                                <option value="2">1</option>
+                                                <option value="1">2</option>
+                                                <option value="4">3</option>
+                                                <option value="5">4</option>
+                                                <option value="6">5</option>
+                                                <option value="3">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select name="dob" id="dob" class="form-control">
+                                                <option value="">Month</option>
+                                                <option value="2">Jan</option>
+                                                <option value="1">Feb</option>
+                                                <option value="4">Mar</option>
+                                                <option value="5">Apr</option>
+                                                <option value="6">May</option>
+                                                <option value="3">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">Aug</option>
+                                                <option value="9">Sept</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 col-xs-4 wdth">
+                                            <select name="dob" id="dob" class="form-control">
+                                                <option value="">Year</option>
+                                                <option value="2">1990</option>
+                                                <option value="1">1991</option>
+                                                <option value="4">1992</option>
+                                                <option value="5">1993</option>
+                                                <option value="6">1994</option>
+                                                <option value="3">1995</option>
+                                                <option value="7">1996</option>
+                                                <option value="8">1997</option>
+                                                <option value="9">1998</option>
+                                            </select>
+                                        </div>
+                                    </div> 
+                    </div>
             </div>
-            </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="birthplace">Place of Birth</label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="birthplace" size="40">
+                <input name="birth_place" type="text" class="form-control" id="birthplace" size="40">
             </div>
-            </div><br>
+            </div>
+            <br>
             <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="category">Category </label>
+                <label  class="col-sm-3 control-label" for="category">Category      </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="category" size="40">
+                <select name="category_id" class="form-control" >
+                    <option value="[category.category_id;block=option]" selected>[category.category_name]</option>
+                </select>  
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="subcategory">Sub Category </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="subcategory" size="40">
+                <input name="sub_category" type="textarea" class="form-control" id="subcategory" size="40">
             </div>
-            </div><br>
+            </div>
+            <br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="religion">Religion </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="religion" size="40">
+                <select name="religion_id" class="form-control" >
+                        <option value="[religion.religion_id;block=option]"  selected>[religion.religion_name]</option>
+                </select>  
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="gender">Gender </label>
                 <div class="col-sm-9">
-                <input name="" type="radio" name="gender" value="male" checked> Male
-        <input name="" type="radio" name="gender" value="female"> Female
-        <input name="" type="radio" name="gender" value="other"> Other 
+                <select name="gender" id="gender" class="form-control">
+                                                <option value="">SELECT</option>
+                                                <option value="male">MALE</option>
+                                                <option value="female">FEMALE</option>
+                 </select>
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="martialstatus">Martial Status </label>
-                <div class="col-sm-9">
-                <input name="" type="radio" name="martialstatus" value="married" > Married
-        <input name="" type="radio" name="martialstaus" value="unmarried" checked> Unmarried
             </div>
-            </div><br>
-            <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="area">Area</label>
-                <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="area" size="40">
+            <br>
+            <div class="col-md-6 form-group"> 
+                <label  class="col-sm-3 control-label" >Marital Status </label>
+                <div class="col-md-9 col-xs-9">
+                      <input type="radio" name="marital_status"  value="0"> Single
+                      <input type="radio" name="marital_status"  value="1" checked> Married
+                </div>   
             </div>
-            </div><br>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="bloodgroup">Blood Group </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="bloodgroup" size="40">
+                <input name="blood_group" type="text" class="form-control" id="bloodgroup" size="40">
             </div>
-            </div><br>
+            </div>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="area">Area</label>
+                <div class="col-sm-9">
+                <input name="area" type="text" class="form-control" id="area" size="40">
+                </div>
+            </div>
+            
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="nationality">Nationality </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="nationality" size="40">
+                <input name="nationality" type="textarea" class="form-control" id="nationality" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="city">City </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="city" size="40">
+                <input name="city1" type="textarea" class="form-control" id="city" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="state">State </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="state" size="40">
+                <input name="state_id1" type="text" class="form-control" id="state" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="pincode">Pin Code </label>
                 <div class="col-sm-9">
-                <input name="" type="text" class="form-control" id="pincode" size="40">
+                <input name="pincode1" type="text" class="form-control" id="pincode" size="40">
             </div>
-            </div><br>
+            </div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="cphone">Phone No. (communication)</label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="cphone" size="40">
+                <input name="phone_no1" type="textarea" class="form-control" id="cphone" size="40">
             </div>
-            </div><br>
+            </div>
+            <div class="col-md-6 form-group">
+                <label  class="col-sm-3 control-label" for="cphone">Address (communication)</label>
+                <div class="col-sm-9">
+                <input name="communication_addr" type="textarea" class="form-control" id="cphone" size="40">
+            </div>
+            </div>
+
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="cemail">Email </label>
                 <div class="col-sm-9">
-                <input name="" type="textarea" class="form-control" id="cemail" size="40">
+                <input name="email1" type="textarea" class="form-control" id="cemail" size="40">
             </div>
-            </div><br>
+            </div>
+
+            <br>
               <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-            </div></div></div>
-      </div>
+              </div>
+            </div>
+            </div>
         </div>
+    </div>
     <div class="row setup-content" id="step-2">
           <div class="col-xs-12 col-md-offset-0">
         <div class="col-md-12">
@@ -297,6 +359,7 @@ body {
                 <input name="email2" type="textarea" class="form-control" id="femail" size="40">
             </div>
             </div>
+            <div class="col-md-12"></div>
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="mname">Mother First Name </label>
                 <div class="col-sm-9">
@@ -351,8 +414,9 @@ body {
                 <input name="email3" type="textarea" class="form-control" id="pemail" size="40">
             </div>
             </div>
+            <div class="col-md-12"></div>
              <div class="col-md-6 form-group">
-                <label  class="col-sm-3 control-label" for="gname">Local Guardian Name </label>
+                <label  class="col-sm-3 control-label" for="gname">Guardian Name </label>
                 <div class="col-sm-9">
                 <input name="local_guardian_name" type="text" class="form-control" id="gname" size="40">
             </div>

@@ -16,14 +16,13 @@
     <form class="form-horizontal" role="form" method="POST" action="[onshow..script_name]?[onshow.other_prms;noerr]">
 <div class="panel panel-primary">
       <div class="panel-heading">Enter Student Details</div>
-      <div class="panel-body">
+      <div class="panel-body" class="col-xs-12">
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="program_id">Program  </label>
                 <div class="col-sm-9">
-                <select name="program_id">
-                    <option value="[cty_blk.val]">[cty_blk.key;block=option]</option>
-                    <option>[onshow.country;ope=html;select;noerr]</option>
-                </select> 
+                    <select class="form-control" name="program_id" >
+                        <option value="[program.student_type_id;block=option]" selected>[program.student_type_name]</option>
+                    </select> 
             </div>
             </div>
             <div class="col-md-6 form-group">
@@ -82,7 +81,7 @@
                                 <div class="col-md-8 col-xs-9">
                                     <div class="row">
                                         <div class="col-md-4 col-xs-4 wdth">
-                                            <select name="dob" id="dob" class="dropselectsec1">
+                                            <select class="form-control" name="dob" id="dob" class="dropselectsec1">
                                                 <option value="">Date</option>
                                                 <option value="2">1</option>
                                                 <option value="1">2</option>
@@ -96,7 +95,7 @@
                                             </select>
                                         </div>
                                         <div class="col-md-4 col-xs-4 wdth">
-                                            <select name="dob" id="dob" class="dropselectsec1">
+                                            <select class="form-control" name="dob" id="dob" class="dropselectsec1">
                                                 <option value="">Month</option>
                                                 <option value="2">Jan</option>
                                                 <option value="1">Feb</option>
@@ -110,7 +109,7 @@
                                             </select>
                                         </div>
                                         <div class="col-md-4 col-xs-4 wdth">
-                                            <select name="dob" id="dob" class="dropselectsec1">
+                                            <select class="form-control" name="dob" id="dob" class="dropselectsec1">
                                                 <option value="">Year</option>
                                                 <option value="2">1990</option>
                                                 <option value="1">1991</option>
@@ -136,7 +135,9 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="category">Category </label>
                 <div class="col-sm-9">
-                <input name="category_id" type="text" class="form-control" id="category" size="40">
+                <select class="form-control" name="category_id" >
+                    <option class="col-sm-12" value="[category.category_id;block=option]" selected>[category.category_name]</option>
+                </select>  
             </div>
             </div>
             <div class="col-md-6 form-group">
@@ -148,13 +149,15 @@
             <div class="col-md-6 form-group">
                 <label  class="col-sm-3 control-label" for="religion">Religion </label>
                 <div class="col-sm-9">
-                <input name="religion_id" type="textarea" class="form-control" id="religion" size="40">
+                <select class="form-control" name="religion_id" >
+                        <option value="[religion.religion_id;block=option]" selected>[religion.religion_name]</option>
+                </select>  
             </div>
             </div>
             <div class="col-md-4 form-group">
                 <label  class="col-sm-6 control-label" for="gender">Gender </label>
                 <div class="col-sm-6">
-                <select name="gender" id="gender" class="dropselectsec1">
+                <select class="form-control" name="gender" id="gender" class="dropselectsec1">
                                                 <option value="">SELECT</option>
                                                 <option value="male">MALE</option>
                                                 <option value="female">FEMALE</option>
